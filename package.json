@@ -1,0 +1,25 @@
+{
+  "name": "visuallization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/lidongjies/visualization.git"
+  },
+  "keywords": [],
+  "author": "makeco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/lidongjies/visualization/issues"
+  },
+  "homepage": "https://gitlab.com/lidongjies/visualization#readme",
+  "dependencies": {
+    "gl-renderer": "^0.13.6",
+    "roughjs": "^4.3.1",
+    "spritejs": "^3.7.23"
+  }
+}
