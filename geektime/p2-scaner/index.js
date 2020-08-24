@@ -61,8 +61,6 @@ class Scanner {
 		this.ctx.restore();
 	}
 	draw() {
-		this.ctx.translate(this.options.width / 2, this.options.height / 2);
-		this.ctx.scale(1, -1);
 		this.drawCoordinate();
 		this.drawScaner();
 		this.drawPoints();
@@ -72,5 +70,7 @@ class Scanner {
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 const { width, height } = canvas;
+context.translate(width / 2, height / 2);
+context.scale(1, -1);
 const scaner = new Scanner({ context, width, height });
 scaner.draw();
