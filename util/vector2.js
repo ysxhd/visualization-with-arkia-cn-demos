@@ -52,6 +52,18 @@ export default class Vector2D extends Array {
 		return this;
 	}
 
+	add(v) {
+		this.x += v.x;
+		this.y += v.y;
+		return this;
+	}
+
+	sub(v) {
+		this.x -= v.x;
+		this.y -= v.y;
+		return this;
+	}
+
 	cross(v) {
 		return this.x * v.y - v.x * this.y;
 	}

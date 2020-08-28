@@ -18,6 +18,7 @@
   },
   "homepage": "https://gitlab.com/lidongjies/visualization#readme",
   "dependencies": {
+    "earcut": "^2.2.2",
     "gl-renderer": "^0.13.6",
     "roughjs": "^4.3.1",
     "spritejs": "^3.7.23"
