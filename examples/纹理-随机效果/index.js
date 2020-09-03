@@ -4,7 +4,6 @@ const renderer = new GlRenderer(canvas);
 (async function () {
 	const program = await renderer.load('./index.frag', './index.vert');
 	renderer.useProgram(program);
-
 	const texture = await renderer.loadTexture('/assets/girl1.jpg');
 	renderer.uniforms.tMap = texture;
 
@@ -32,4 +31,10 @@ const renderer = new GlRenderer(canvas);
 	]);
 
 	renderer.render();
+
+	function update(t) {
+		renderer.uniforms.uTime = t / 2000;
+		requestAnimationFrame(update);
+	}
+	update(0);
 })();
